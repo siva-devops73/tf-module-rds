@@ -2,7 +2,7 @@ variable "component" {}
 variable "env" {}
 variable "engine" {}
 variable "engine_version" {}
-variable "database_version" {}
+variable "database_name" {}
 variable "tags" {}
 variable "subnet_ids" {}
 variable "vpc_id" {}

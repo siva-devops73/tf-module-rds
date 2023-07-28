@@ -34,7 +34,7 @@ resource "aws_db_subnet_group" "main" {
 ##RDS cluster
 resource "aws_rds_cluster" "main" {
   cluster_identifier      = "${var.component}-${var.env}"
-  database_name           = var.database_version
+  database_name           = var.database_name
   master_username         = data.aws_ssm_parameter.username.value
   master_password         = data.aws_ssm_parameter.password.value
   db_subnet_group_name    = aws_db_subnet_group.main.name
