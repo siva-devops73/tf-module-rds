@@ -5,3 +5,8 @@ variable "engine_version" {}
 variable "database_version" {}
 variable "tags" {}
 variable "subnet_ids" {}
+variable "vpc_id" {}
+variable "sg_subnet_cidr" {}
+variable "kms_key_arn" {}
+variable "instance_class" {}
+variable "instance_count" {}
